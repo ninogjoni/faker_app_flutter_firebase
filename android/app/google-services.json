@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "416435448903",
+    "project_id": "faker-app-flutter-firebase-010",
+    "storage_bucket": "faker-app-flutter-firebase-010.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416435448903:android:82cc3d2bfc01742bafd562",
+        "android_client_info": {
+          "package_name": "com.example.faker_app_flutter_firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "416435448903-umodvg2aksf9e3ui8o9hqni15s2plpus.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcAPuWJ-ZBC2-SyH6hr0XZQuc4SpK4egw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "416435448903-umodvg2aksf9e3ui8o9hqni15s2plpus.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
