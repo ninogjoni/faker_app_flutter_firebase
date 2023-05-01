@@ -41,12 +41,18 @@ class HomeScreen extends ConsumerWidget {
 
 class JobsListView extends ConsumerWidget {
   const JobsListView({super.key});
-
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final firestoreRepository = ref.watch(firestoreRepositoryProvider);
+    final user = ref.watch(firebaseAuthProvider).currentUser;
     return FirestoreListView<Job>(
-      query: firestoreRepository.jobsQuery(),
+      query: firestoreRepository.jobsQuery(user!.uid),
+      errorBuilder: ((context, error, stackTrace) => Center(
+            child: Text(error.toString()),
+          )),
+      emptyBuilder: (context) => const Center(
+        child: Text('No jobs found'),
+      ),
       // Automatically update the list when sth. in collection changes
       itemBuilder: (BuildContext context, QueryDocumentSnapshot<Job> doc) {
         final job = doc.data();
